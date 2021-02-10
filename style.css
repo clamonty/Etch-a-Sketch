@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #eee;
+  font-size: 5em;
+  margin-top: .2em;
+  margin-bottom: .2em;
+}
+
+.buttons {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3em;
+}
+.grid-btn {
+  margin: 0 auto;
+  padding: .5em 1em;
+  font-size: 1.5em;
+}
+.change-btn {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #222;
+  width: 250px;
+  padding: 1em;
+  height: 50%;
+  align-self: center;
+}
+.grey-scale {
+  border: hidden;
+  background: linear-gradient(90deg, rgb(56, 56, 56) 0%, rgb(221, 221, 221) 100%)
+}
+.rainbow {
+  border: hidden;
+  background: linear-gradient(90deg,rgba(255, 0, 0, 1) 0%,
+  rgba(255, 255, 0, 1) 15%,
+  rgba(0, 255, 0, 1) 30%,
+  rgba(0, 255, 255, 1) 50%,
+  rgba(0, 0, 255, 1) 65%,
+  rgba(255, 0, 255, 1) 80%,
+  rgba(255, 0, 0, 1) 100%);
+}
+
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.grid-container {
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid black;
+  align-self: center;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 700px;
+  width: 70vw;
+  min-width: 500px;
+  max-width: 1000px;
+  display: grid; 
+}
+
+.grid-square {
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+
